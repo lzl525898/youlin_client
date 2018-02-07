@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:orientation="horizontal" >
+
+    <EditText
+        android:id="@+id/et01"
+        android:layout_width="73dip"
+        android:layout_height="27dip"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:numeric="integer"
+        android:textColor="#323232"
+        android:textSize="16sp"
+        android:inputType="number" >
+    </EditText>
+    <ImageButton
+        android:id="@+id/bt02"
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="13dp"
+        android:background="@drawable/btn_jia"/>
+    <ImageButton
+        android:id="@+id/bt01"
+        android:layout_width="26dip"
+        android:layout_height="26dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/btn_jian" />
+    
+
+</LinearLayout>

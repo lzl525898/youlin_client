@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#f3f2f0"
+    tools:context=".PersonalInfoNameActivity" >
+
+	<EditText
+	    android:id="@+id/changeName"
+	    android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="53dip"
+        android:paddingLeft="16dip"
+        android:textSize="16sp"
+        android:textColor="#323232"
+        android:maxLength="10"
+        android:background="@drawable/bg_change_pwd"/>
+
+	<TextView 
+	    android:layout_below="@+id/changeName"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="起个拉风的名字(2~10个字),让你的邻居更容易记住你."
+	    android:textSize="14sp"
+	    android:textColor="#999999"/>
+
+</RelativeLayout>

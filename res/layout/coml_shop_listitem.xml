@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+    <ImageView 
+        android:id="@+id/shop_img"
+        android:layout_width="79dip"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:src="@drawable/pic_1"/>
+	<RelativeLayout 
+	    android:id="@+id/shopitemlay"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_toRightOf="@id/shop_img"
+	    android:layout_marginTop="10dip"
+	    android:layout_marginBottom="10dip">
+	    <TextView
+            android:id="@+id/shop_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/distance"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="渔家厨万州烤全鱼"
+            android:textColor="#323232"
+            android:textSize="16dip" />
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:text="＜200m"
+            android:textColor="#909090"
+            android:textSize="14sp" />
+
+	    <!-- <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="12dip"
+	        android:textColor="#b2b2b2"
+	        android:layout_below="@id/shop_name"
+	        android:text="渔家厨万州烤全鱼"
+	        android:layout_marginTop="14dip"/> -->
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="14dp"
+	        android:layout_below="@id/shop_name"
+	        android:layout_marginTop="12dip">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	        	android:layout_height="match_parent"
+	        	android:src="@drawable/icon_dibiao"
+	        	android:scaleType="fitStart"/>
+	        <TextView 
+	            android:id="@+id/shopposition"
+	            android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="12dip"
+	        	android:textColor="#b2b2b2"
+	        	android:text="渔家厨万州烤全鱼"/>
+	    </LinearLayout>
+	    <LinearLayout 
+	        android:orientation="horizontal"
+	        android:layout_width="wrap_content"
+	        android:layout_height="13dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="3dip">
+	        <RatingBar
+        	android:id="@+id/room_ratingbar"
+        	style="@style/RadingStyle"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+          	android:numStars="5"
+         	android:rating="3"
+        	android:layout_marginLeft="2dp" >
+    		</RatingBar>
+	        <TextView 
+	           android:id="@+id/rating_text"
+	           android:layout_width="wrap_content"
+        	   android:layout_height="wrap_content"
+        	   android:textSize="12sp"
+        	   android:gravity="center_vertical"
+        	   android:layout_gravity="center_vertical"
+        	   android:textColor="#ffba02"
+        	   android:layout_marginLeft="6dip"
+        	   android:text="4.9" />
+	    </LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

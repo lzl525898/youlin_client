@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2ef"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/accountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/accountHead"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="20dp"/>
+ 		<RelativeLayout
+ 		    android:id="@+id/accountbutton"
+            android:layout_width="98dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip" >
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="15dip"
+                android:layout_height="25dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dip" 
+                android:background="@drawable/zhixiang"/>
+            <ImageButton 
+                android:id="@+id/qiandaostep"
+			    android:layout_width="47dp"
+			    android:layout_height="wrap_content"
+			    android:scaleType="fitCenter"
+			    android:src="@drawable/btn_qiandao"
+			    android:layout_marginRight="22dp"
+			    android:layout_toLeftOf="@+id/next"
+			    android:background="#00ffffff"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/accountHead"
+            android:layout_toLeftOf="@id/accountbutton"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/accountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#323232"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/accountPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#909090" />
+        </LinearLayout>
+
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+ 
+        <LinearLayout
+            android:id="@+id/jifen_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_account" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="积分"
+                 android:textColor="#909090"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/jifenId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginTop="5dip"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dip"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#8D8D8D" />
+
+    <!--    <LinearLayout
+            android:id="@+id/lijuan_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_account" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="礼卷"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/lijuanId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dip"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#8D8D8D" />
+-->
+        <LinearLayout
+            android:id="@+id/mySend_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_account" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我发的"
+                android:textColor="#909090"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/mySendId"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.7dip"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#8D8D8D" />
+
+        <LinearLayout
+            android:id="@+id/collect_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/bg_account" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="收藏"
+                android:textColor="#909090"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/collectId"                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="0"
+                android:textColor="#323232"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="13dip"/>
+
+    <ListView
+        android:id="@+id/myMessageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:divider="#dedede"
+        android:dividerHeight="0.7dp"
+        android:listSelector="@drawable/bg_account" >
+    </ListView>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dp"
+        android:background="@drawable/fengexian"
+        android:layout_gravity="bottom" />
+</LinearLayout>

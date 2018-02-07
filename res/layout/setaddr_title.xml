@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp" 
+    android:background="@color/main" >
+
+    <Button
+        android:id="@+id/backbutton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/nav_fanhui_xin_tiao"
+        android:text="填写家庭地址"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#00999999"/>
+        <Button
+        android:id="@+id/addrsetend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="完成"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:background="#00999999"
+         />
+
+</RelativeLayout>

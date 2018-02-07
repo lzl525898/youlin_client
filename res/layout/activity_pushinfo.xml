@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_push"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/rl_show_info_push_circle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+		<ImageView
+		    android:id="@+id/img1" 
+		    android:layout_width="73dip"
+		    android:layout_height="73dip"
+		    android:layout_marginTop="33dip"
+		    android:background="@drawable/wutongzhi"
+		    android:layout_centerHorizontal="true"/>
+		<TextView 
+		    android:id="@+id/text_view1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@+id/img1"
+		    android:layout_marginTop="13dip"
+		    android:text="暂无任何通知"
+		    android:textColor="#808080"
+		    android:textSize="14sp"
+		    android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view1"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="40dip"
+            android:text="在这里您可以看到地址的审核信息,物业的推送信息(公告、报修、建议),新闻的推送信息.点击后可以跳转到对应界面."
+            android:textColor="#323232"
+            android:singleLine="false"
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/pb_push_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:indeterminateDrawable="@drawable/push_animdraw"
+        android:indeterminateDuration="1500"
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal" />
+    <ListView
+        android:id="@+id/lv_push_new_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginBottom="30dp"
+        android:divider="@drawable/fengexian"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:longClickable="true"
+        android:visibility="gone" />
+</LinearLayout>

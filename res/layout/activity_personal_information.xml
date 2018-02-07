@@ -1,0 +1,314 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2f0"
+    android:orientation="vertical"
+    tools:context=".PersonalInformationActivity" >
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginTop="13dip"
+        android:background="#eeeeee" />
+    <RelativeLayout
+        android:id="@+id/head_portrait"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@drawable/bg_account" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="头像"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/head_portrait_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toLeftOf="@+id/zhixiang_img_1"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"/>
+
+        <ImageView
+            android:id="@+id/zhixiang_img_1"
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+	
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee"
+        android:layout_marginTop="13dip" />
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+    <RelativeLayout
+        android:id="@+id/pwd"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+		
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改密码"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:id="@+id/birthday"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="生日"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/brithdayTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+    
+	<RelativeLayout
+        android:id="@+id/sex"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="性别"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/sexTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+    
+    <RelativeLayout
+        android:id="@+id/occupation"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="职业"
+            android:layout_centerVertical="true"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+		 <TextView
+            android:id="@+id/occupationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dip"
+            android:src="@drawable/zhixiang" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+<!--  
+    <RelativeLayout
+        android:id="@+id/sign_up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_account"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="个性签名"
+            android:layout_centerVertical="true"
+            android:textColor="#323232"
+            android:textSize="15sp" />
+         <TextView
+            android:id="@+id/sign_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"
+            android:textColor="#323232"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zhixiang"/>
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.7dip"
+        android:background="#CCCCCC" />
+	
+	-->
+    <RelativeLayout
+        android:id="@+id/familyAddress"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#ffffff"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="家庭住址是否公开"
+            android:layout_centerVertical="true"
+            android:textColor="#808080"
+            android:textSize="16sp" />
+		<com.nfs.youlin.view.SwitchView
+        	android:id="@+id/address_switch"
+       		android:layout_width="42dip"
+        	android:layout_height="24dip"
+        	android:layout_alignParentRight="true"
+        	android:layout_centerVertical="true"
+            android:layout_marginRight="40dp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:background="#eeeeee" />
+</LinearLayout>

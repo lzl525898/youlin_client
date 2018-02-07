@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.youlintpl.ui.activity.SignUpDetailActivity"
+    android:background="@color/white" >
+
+    <RelativeLayout 
+        android:id="@+id/rl_signup_detail_picture"
+  		android:layout_width="match_parent"
+  		android:layout_height="wrap_content">
+  <!-- 
+        <ImageView
+       	    android:id="@+id/iv_twoDimCode"
+           	android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+           	android:scaleType="fitEnd"/>
+            
+         <TextView 
+            android:id="@+id/tv_signup_num"
+		    android:text="报名总数:XX个"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/iv_twoDimCode"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginLeft="15dp"
+		    android:textSize="16sp"
+		    android:gravity="left|center_vertical"/> 
+        
+         <RelativeLayout 
+             android:id="@+id/rl_signup_detail_num"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/iv_twoDimCode"
+             android:layout_alignBottom="@id/iv_twoDimCode">
+             
+             <TextView 
+       	        android:id="@+id/tv_already_signUp"
+           	    android:layout_width="match_parent"
+               	android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+   	            android:text="以签到家庭XX个"
+       	        android:textSize="16sp"
+           	    android:gravity="left|center_vertical"/>
+             
+             <TextView 
+   	            android:id="@+id/tv_not_signUp"
+       	        android:layout_below="@id/tv_already_signUp"
+           	    android:layout_width="match_parent"
+               	android:layout_height="wrap_content"
+                android:text="未签到家庭XX个"
+   	            android:textSize="16sp"
+       	        android:gravity="left|center_vertical"
+           	    android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"/>
+             
+   	        <TextView 
+   	            android:layout_width="match_parent"
+       	        android:layout_height="wrap_content"
+       	        android:layout_below="@id/tv_not_signUp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="7dp"
+               	android:text="扫描活动二维码即可报名签到"
+                android:textSize="16sp"
+   	            android:gravity="left|center_vertical"/>
+       
+		</RelativeLayout>
+		
+          <TextView 
+		    android:text="报名家庭:XX个"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_toRightOf="@id/tv_signup_num"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginLeft="15dp"
+		    android:layout_below="@id/iv_twoDimCode"
+		    android:layout_alignLeft="@id/rl_signup_detail_num" 
+		    android:textSize="16sp"
+		    android:gravity="left"/> 
+-->
+	<TextView 
+            android:id="@+id/tv_signup_num"
+		    android:text="报名人数:0个"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginBottom="10dp"
+		    android:textSize="15sp"/>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+	    android:layout_width="match_parent"
+	    android:layout_height="0.7dp"
+	    android:background="#eeeeee"
+	    android:layout_below="@+id/rl_signup_detail_picture"/>
+ 	<RelativeLayout
+ 	    android:clickable="true"
+ 	    android:id="@+id/sign_admin_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@+id/view1"
+    	android:background="@drawable/bg_account">
+      <ImageView
+            android:id="@+id/iv_signup_portrait"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"/>
+	 
+        <TextView
+            android:id="@+id/tv_signup_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/admin_iv"
+            android:layout_toRightOf="@id/iv_signup_portrait"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/green"/>
+
+         <ImageView 
+            android:id="@+id/admin_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+            android:src="@drawable/ic_ng_member_admin"/>
+	</RelativeLayout>
+	<View
+	    android:id="@+id/view2" 
+	    android:layout_width="match_parent"
+	    android:layout_height="0.7dp"
+	    android:background="#eeeeee"
+	    android:layout_below="@+id/sign_admin_layout"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/view2">
+       <ListView 
+           android:id="@+id/signup_family_lv"
+           android:layout_width="fill_parent"
+           android:layout_height="fill_parent"
+           android:divider="#EEEEEE"
+           android:dividerHeight="0.7dp">
+       </ListView>
+
+    </RelativeLayout>
+    
+</RelativeLayout>

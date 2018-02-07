@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialogactivitystyle"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="我要报名"
+        android:textColor="@color/main"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/daylayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/human_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:background="#dddddd"
+            android:gravity="center_vertical"
+            android:text="成年人"
+            android:textColor="#646464"
+            android:textSize="16sp" />
+
+        <com.nfs.youlin.view.addandreduceedit
+            android:id="@+id/humancount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:gravity="center_vertical" >
+        </com.nfs.youlin.view.addandreduceedit>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/humancount"
+            android:background="@drawable/icon_chengren" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timelayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/childrsn_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="18dp"
+            android:background="#dddddd"
+            android:gravity="center_vertical"
+            android:text="儿童"
+            android:textColor="#646464"
+            android:textSize="16sp" />
+
+        <com.nfs.youlin.view.addandreduceedit
+            android:id="@+id/childrencount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="17dp"
+            android:gravity="center_vertical" >
+        </com.nfs.youlin.view.addandreduceedit>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/childrencount"
+            android:background="@drawable/icon_ertong" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dialogactivitystyle"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/applycancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+		<View 
+		    android:layout_width="0.5dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:background="#909090"/>
+        <Button
+            android:id="@+id/applyok"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="#323232"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>

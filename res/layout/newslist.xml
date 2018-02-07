@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f3f2ef" >
+   
+
+   	<RelativeLayout 
+		android:id="@+id/nonewsview"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:visibility="visible">
+        <LinearLayout 
+            android:layout_width="match_parent" 
+        	android:layout_height="match_parent"
+        	android:orientation="vertical">
+            <TextView 
+		    	android:layout_width="187dp"
+		    	android:layout_height="33dp"
+		    	android:background="@drawable/dibutiao"
+		    	android:text="暂时没有新闻！"
+		    	android:textSize="12sp"
+		    	android:layout_gravity="center_horizontal"
+		    	android:layout_marginTop="13dp"
+		    	android:textColor="#ffffff"
+		    	android:gravity="center" />
+            <ImageView 
+                android:layout_width="wrap_content"
+		    	android:layout_height="93dp"
+		    	android:src="@drawable/tubiao"
+		    	android:layout_marginLeft="138dp"
+		    	android:layout_marginRight="138dp"
+		    	android:layout_marginTop="27dp" />
+        </LinearLayout>
+		
+	        <FrameLayout
+                android:id="@+id/tabcontentnews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_weight="1"
+                android:layout_marginBottom="26dp"
+                android:background="#f3f2ef">
+            </FrameLayout>
+	<TextView
+	    android:id="@+id/friend_circle_noinfo_tvnews"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:textSize="15dp"
+	    android:gravity="center"
+	    android:text="没有更多了"
+	    android:textColor="#cccccc"
+	    android:visibility="gone">
+	</TextView>
+   	</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff2f6"
+    android:orientation="vertical" >
+
+	<TableLayout
+	    android:id="@+id/sex_tab_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="15dip"
+	    android:stretchColumns="0,1" >
+	    <TableRow>
+	        <RelativeLayout
+	            android:layout_width="0dip"
+	            android:layout_height="50dip"
+	            android:layout_weight="1" >
+	            <RadioButton
+	                android:id="@+id/rb_register_select_boy"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_toLeftOf="@+id/iv_register_select_boy"/>
+	            <ImageView
+	                android:id="@+id/iv_register_select_boy"
+	                android:layout_width="50dp"
+	                android:layout_height="50dp"
+	                android:layout_alignParentRight="true"
+	                android:layout_centerHorizontal="true"
+	                android:layout_marginRight="5dip"
+	                android:src="@drawable/register_sel_boy" />
+	        </RelativeLayout>
+	        <RelativeLayout
+	            android:layout_width="0dip"
+	            android:layout_height="50dip"
+	            android:layout_weight="1">
+
+	            <RadioButton
+	                android:id="@+id/rb_register_select_gril"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_centerVertical="true"
+	                android:layout_toRightOf="@+id/iv_register_select_gril"/>
+
+	            <ImageView
+	                android:id="@+id/iv_register_select_gril"
+	                android:layout_width="50dp"
+	                android:layout_height="50dp"
+	                android:layout_alignParentLeft="true"
+	                android:layout_centerVertical="true"
+	                android:layout_marginLeft="5dip"
+	                android:src="@drawable/register_sel_gril" />
+	        </RelativeLayout>
+	    </TableRow>
+	</TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:orientation="vertical" >
+		<!-- android:background="@null" -->
+        <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="66dip"
+                android:hint="请输入昵称(2~10个字)"
+                android:maxLength="10"
+                android:paddingLeft="10dip"
+                android:singleLine="true"
+                android:textSize="16sp" />
+	
+	        <RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+				<EditText
+		                android:id="@+id/password"
+		                android:layout_width="match_parent"
+		                android:layout_height="66dip"
+		                android:hint="请输入密码(6~16个字符)"
+		                android:inputType="textPassword"
+		                android:paddingLeft="10dip"
+		                android:singleLine="true"
+		                android:textSize="16sp" />
+				<ImageView 
+                android:id="@+id/iv_register_pwd_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"/>
+			</RelativeLayout>
+			<RelativeLayout 
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal">
+				<EditText
+		                android:id="@+id/confirm_password"
+		                android:layout_width="match_parent"
+		                android:layout_height="66dip"
+		                android:hint="请确认密码(6~16个字符)"
+		                android:inputType="textPassword"
+		                android:paddingLeft="10dip"
+		                android:singleLine="true"
+		                android:textSize="16sp" />
+				<ImageView 
+                android:id="@+id/iv_register_confirm_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dip"/>
+			</RelativeLayout>
+<!--         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/bg"
+                android:onClick="register"
+                android:paddingBottom="7dp"
+                android:paddingTop="7dp"
+                android:text="register"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout> -->
+    </LinearLayout>
+
+</LinearLayout>

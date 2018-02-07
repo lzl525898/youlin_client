@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <LinearLayout 
+        android:id="@+id/gonggao_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="79dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView 
+            android:layout_width="71dip"
+            android:layout_height="71dip"
+            android:background="@drawable/gonggaoinit" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text=" 暂时还没有和您相关的公告！"
+            android:textColor="#646464"
+            android:textSize="12sp" />
+    </LinearLayout>
+   	<RelativeLayout android:orientation="horizontal"
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp">
+
+	        <FrameLayout
+                android:id="@+id/tabcontentgonggao"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" 
+                android:layout_weight="1"
+                android:background="#ffffff">
+            </FrameLayout>
+	<TextView
+	    android:id="@+id/gonggao_noinfo_tv1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:textSize="15dp"
+	    android:gravity="center"
+	    android:text="没有更多了"
+	    android:textColor="#cccccc"
+	    android:visibility="gone">
+	</TextView>
+   	</RelativeLayout>
+</LinearLayout>

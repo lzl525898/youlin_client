@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <RelativeLayout 
+        android:id="@+id/commbarlay"
+        android:layout_width="wrap_content"
+        android:layout_height="29dip"
+        android:layout_marginRight="18dip"
+        android:layout_gravity="center_vertical"
+        >
+        <!-- android:background="@drawable/comm_search_normal" -->
+        <EditText 
+        	android:id="@+id/commedit"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="49dip"
+        	android:layout_marginLeft="14dip"
+        	android:textColor="#323232"
+        	android:textSize="13sp"
+        	android:hint="请输入您想要搜索的关键字"
+        	android:singleLine="true"
+        	android:maxLength="17"
+        	android:textColorHint="#e5e5e5"
+        	android:visibility="invisible"
+        	android:background="@null"/>
+    	<ImageView
+        	android:id="@+id/commsearch"
+        	android:layout_width="22dip"
+        	android:layout_height="22dip"
+        	android:layout_alignParentRight="true"
+        	android:layout_marginRight="8dip"
+        	android:layout_centerVertical="true"
+        	android:src="@drawable/icon_sousuo"
+        	android:tag="0"/>
+    </RelativeLayout>
+    
+    
+</LinearLayout>

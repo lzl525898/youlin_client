@@ -1,0 +1,249 @@
+package com.nfs.youlin.utils;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.http.Header;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import com.nfs.youlin.R;
+import com.nfs.youlin.http.JsonHttpResponseHandler;
+import com.nfs.youlin.activity.neighbor.CircleDetailActivity;
+import com.nfs.youlin.activity.titlebar.newtopic.NewTopic;
+import com.nfs.youlin.http.AsyncHttpClient;
+import com.nfs.youlin.http.IHttpRequestUtils;
+import com.nfs.youlin.http.RequestParams;
+import com.nfs.youlin.http.SyncHttpClient;
+
+import android.annotation.SuppressLint;
+import android.app.Activity;
+import android.app.ProgressDialog;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.Intent;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
+import android.media.ExifInterface;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
+import android.os.Message;
+import android.provider.MediaStore;
+import android.util.Log;
+import android.widget.Toast;
+
+public class UploadPictureChange {
+	private Context mContext;
+	Bitmap myBitmap=null;
+	Bitmap bitmap=null;
+	RequestParams mRequestParams;
+	ProgressDialog pd;
+	Bimp bimp=new Bimp();
+	private String[] imgArray = {"img_0", "img_1", "img_2",
+			                     "img_3", "img_4", "img_5",
+			                     "img_6", "img_7", "img_8"};
+	private List<String> filePathList = new ArrayList<String>();
+	public UploadPictureChange(final Context context,RequestParams sRequestParams) {
+		// TODO Auto-generated constructor stub
+		this.mContext = context;
+		mRequestParams=sRequestParams;
+		new Thread(new Runnable() {
+			@Override
+			public void run() {
+				Message msg=new Message();
+				int length = Bimp.tempSelectBitmap.size();
+				if(0==length){
+					mRequestParams.put("send_status", 0);
+				}else{
+					mRequestParams.put("send_status", 1);
+				}
+				mRequestParams.put("tag", "updatetopic");
+				mRequestParams.put("apitype", IHttpRequestUtils.APITYPE[5]);
+				for (int i = 0; i < length; i++) {
+					// TODO Auto-generated method stub
+					String newPath = null;
+					if (Bimp.tempSelectBitmap.get(i).getImagePath() == null) {
+						newPath = Bimp.tempSelectBitmap.get(i).getThumbnailPath();
+					} else {
+						newPath = Bimp.tempSelectBitmap.get(i).getImagePath();
+					}
+					XuanzhuanBitmap xuanzhuanBitmap = new XuanzhuanBitmap();
+					int degree = xuanzhuanBitmap.readPictureDegree(newPath);
+					try {
+						BufferedInputStream in = new BufferedInputStream(new FileInputStream(new File(newPath)));
+						BitmapFactory.Options options = new BitmapFactory.Options();
+						options.inJustDecodeBounds = true;
+						BitmapFactory.decodeStream(in, null, options);
+						in.close();
+
+						int scale = 1;
+				        if (options.outHeight > 1000 || options.outWidth > 1000) {
+				            scale = (int)Math.pow(2, (int) Math.round(Math.log(1000 / (double) Math.max(options.outHeight, options.outWidth)) / Math.log(0.5)));
+				        }
+				        BitmapFactory.Options o2 = new BitmapFactory.Options();
+				        o2.inSampleSize = scale;
+				        o2.inJustDecodeBounds = false;
+				        options.inPurgeable = true;
+						options.inInputShareable = true;
+				        in = new BufferedInputStream(new FileInputStream(new File(newPath)));
+				        bitmap = BitmapFactory.decodeStream(in, null, o2);
+				        in.close();
+						
+						myBitmap = xuanzhuanBitmap.rotaingImageView(degree,bitmap);
+					} catch (IOException e1) {
+						// TODO Auto-generated catch block
+						myBitmap = BitmapFactory.decodeResource(mContext.getResources(),R.drawable.bg_error);
+						//listBitmap.add(myBitmap);
+						e1.printStackTrace();
+					}
+					String path=FileUtils.SDPATH+System.currentTimeMillis()+".jpg";
+					File fileDir=new File(FileUtils.SDPATH+"");
+					if(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)){
+						fileDir.mkdir();
+					}
+					File file = new File(path);
+					try {
+						FileOutputStream out = new FileOutputStream(file);
+						myBitmap.compress(Bitmap.CompressFormat.JPEG, 50,out);
+						out.flush();
+						out.close();
+					} catch (FileNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					try {
+						mRequestParams.put(imgArray[i], file);
+					} catch (FileNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					filePathList.add(path);
+					//Uri uri = Uri.parse(MediaStore.Images.Media.insertImage(context.getContentResolver(), myBitmap, null, null));
+					if(myBitmap!=null){
+						myBitmap.recycle();
+						myBitmap=null;
+					}
+					if(bitmap!=null){
+						bitmap.recycle();
+						bitmap=null;
+					}
+					System.gc();
+					
+//					ContentResolver cr = context.getContentResolver();
+//					String[] pro = { MediaStore.Images.Media.DATA };
+//					Cursor cursor = cr.query(uri, pro, null, null, null);
+//					if (cursor.moveToFirst()) {
+//						int column_index = cursor.getColumnIndexOrThrow(MediaStore.Images.Media.DATA);
+//						String path = cursor.getString(column_index);
+//						// upload pic
+//						//Loger.i("youlin", "file-name->" + imgArray[i]	+ "   path:" + cursor.getString(column_index));
+//						File file = new File(path);
+//						try {
+//							mRequestParams.put(imgArray[i], file);
+//							// Loger.i("youlin", "post file..."+file.getPath());
+//						} catch (FileNotFoundException e) {
+//							// TODO Auto-generated catch block
+//							Loger.i("youlin",
+//									"post file error..." + e.getMessage());
+//							e.printStackTrace();
+//						}
+//						filePathList.add(path);
+//
+//					}
+				}
+				msg.what=101;
+				handler.sendMessage(msg);
+			}
+		}).start();
+		// pd.cancel();
+	}
+	
+	private void deleteAllRes(){
+		CircleDetailActivity.finishBool=true;
+		((Activity)mContext).finish();
+		new ClearSelectImg();
+		//Bimp.tempSelectBitmap.clear();
+		mRequestParams = null;
+		NewTopic.nforumId = -1;
+		for (int i = 0; i < filePathList.size(); i++) {
+			//File file = new File(filePathList.get(i));
+			try {
+				File photoFile = new File(Environment.getExternalStorageDirectory()+"/Photo_LJ/");
+				DataCleanManager.deleteFilesByDirectory(photoFile);
+				//String[] path = { filePathList.get(i) };
+				//mContext.getContentResolver().delete(MediaStore.Images.Media.EXTERNAL_CONTENT_URI,MediaStore.Images.Media.DATA+ " LIKE ?", path);
+				//file.delete();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				Loger.i("youlin","error->newtop->" + e.getMessage());
+				e.printStackTrace();
+			}
+		}
+	}
+	public void backFlag(){
+		AsyncHttpClient httpClient = new AsyncHttpClient();
+		httpClient.post(IHttpRequestUtils.URL + IHttpRequestUtils.YOULIN, mRequestParams,
+				new JsonHttpResponseHandler() { 
+					@Override
+					public void onSuccess(int statusCode, Header[] headers,
+							JSONObject response) {
+						// TODO Auto-generated method stub
+						String flag = "no";
+							try {
+								flag = response.getString("flag");
+							} catch (JSONException e) {
+								// TODO Auto-generated catch block
+								e.printStackTrace();
+							}
+							
+							if ("ok".equals(flag)) {
+								
+								
+							} else {
+								mRequestParams = null;
+								NewTopic.nforumId = -1;
+							}
+							
+							deleteAllRes();
+						
+						super.onSuccess(statusCode, headers, response);
+					}
+
+					@Override
+					public void onFailure(int statusCode, Header[] headers,
+							String responseString, Throwable throwable) {
+						// TODO Auto-generated method stub
+						deleteAllRes();
+						new ErrorServer(mContext, responseString);
+						super.onFailure(statusCode, headers, responseString,
+								throwable);
+					}
+		});
+	}
+	@SuppressLint("HandlerLeak")
+	Handler handler=new Handler(){
+		public void handleMessage(Message msg) {
+			switch (msg.what) {
+			case 101:
+				backFlag();
+				break;
+			default:
+				break;
+			}
+
+		};
+	};
+}

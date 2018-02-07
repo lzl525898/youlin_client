@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_top_popup_share"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/news_top_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="20dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#ffffff" />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新闻分享"
+            android:textColor="#323232"
+            android:textSize="18sp"/>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginLeft="65dip"
+            android:layout_marginRight="65dip"
+            android:orientation="horizontal">
+            <LinearLayout 
+                android:id="@+id/iv_share_youlin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView 
+                	android:layout_width="53dp"
+                	android:layout_height="53dp"
+                	android:scaleType="fitCenter"
+                	android:src="@drawable/icon_youlin"
+                	android:layout_gravity="center_horizontal"/>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="优邻好友"
+                    android:textColor="@color/darkgray"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:id="@+id/iv_share_neighborcircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ImageView 
+                	android:layout_width="53dp"
+                	android:layout_height="53dp"
+                	android:scaleType="fitCenter"
+                	android:src="@drawable/pic_linjuquan"
+                	android:layout_gravity="center_horizontal"/>
+                <View 
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邻居圈"
+                    android:textColor="@color/darkgray"
+                    android:textSize="16sp"
+                    android:layout_gravity="center_horizontal"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="15dip"
+            android:background="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/ll_news_share_declare"
+            android:layout_width="match_parent"
+            android:layout_height="48dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/bg_default_button_3"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:text="取消"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<ProgressBar 
+	    android:id="@+id/web_pd"
+	    style="?android:attr/progressBarStyleHorizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="3dip"
+	    android:indeterminateOnly="false"
+	    android:layout_alignParentTop="true"
+	    android:progressDrawable="@drawable/progress_bar_states"/>
+	<TextView 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/webdisconnect"
+    	android:gravity="center"
+    	android:text="网络异常请重新加载"
+    	android:textColor="@color/main"
+    	android:visibility="gone"/>
+	
+    <WebView 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/webView"
+    	android:layout_below="@+id/web_pd"
+    	android:visibility="visible"/>
+
+</RelativeLayout>

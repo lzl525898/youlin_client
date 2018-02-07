@@ -1,0 +1,17 @@
+# cache for current jar dependency. DO NOT EDIT.
+# format is <lastModified> <length> <SHA-1> <path>
+# Encoding is UTF-8
+1459140875081 218481 e0fca46943d5a909762839c6a8666fa97942ff45 D:\Program Files\AndriodPath\youiln\libs\MobTools.jar
+1459138757131 218481 e0fca46943d5a909762839c6a8666fa97942ff45 D:\Program Files\AndriodPath\youiln\plugins\sample\libs\MobTools.jar
+1459554848000 155747 3c3713161d8346c50bb860fc2966875d4be9e02e D:\Program Files\AndriodPath\youiln\plugins\ChatDemoUI\libs\imageloader.jar
+1459132635414 155747 3c3713161d8346c50bb860fc2966875d4be9e02e D:\Program Files\AndriodPath\youiln\libs\imageloader.jar
+1458100463469 536576 f2c821a0d13219a2e70490085c390bab03fb5953 D:\Program Files\AndriodPath\youiln\libs\jpush-android-2.0.5.jar
+1459554848000 536576 f2c821a0d13219a2e70490085c390bab03fb5953 D:\Program Files\AndriodPath\youiln\plugins\ChatDemoUI\libs\jpush-android-2.0.5.jar
+1458100447458 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\PullToRefreshViewPager\libs\android-support-v4.jar
+1458100440840 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\SmoothProgressBar\libs\android-support-v4.jar
+1458100457627 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\libs\android-support-v4.jar
+1458100263780 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\PullToRefreshListFragment\libs\android-support-v4.jar
+1458100282141 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\sample\libs\android-support-v4.jar
+1458100245286 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\actionbarsherlock\libs\android-support-v4.jar
+1459554828000 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\ChatDemoUI\libs\android-support-v4.jar
+1458100445165 987314 3b20dc871d179ba476082efe543dc1b38db46e30 D:\Program Files\AndriodPath\youiln\plugins\timerlib\libs\android-support-v4.jar

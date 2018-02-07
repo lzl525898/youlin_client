@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/albumback"
+    >
+	<com.nfs.youlin.activity.titlebar.startactivity.zoom.PhotoView 
+	    android:id="@+id/gallery_head_img"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" />
+    
+</RelativeLayout>

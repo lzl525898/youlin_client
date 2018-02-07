@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+    
+    <LinearLayout 
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_marginTop="4dip"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#323232"
+            android:textSize="14sp"
+            android:text="领取礼品通知"
+            android:layout_marginTop="19dip"
+            android:layout_gravity="center_horizontal"/>
+        <TextView 
+            android:id="@+id/getmessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="23dip"
+            android:lineSpacingExtra="10dip"
+            android:layout_marginLeft="13dip"
+            android:layout_marginRight="13dip"
+            android:layout_marginBottom="20dip"
+            android:gravity="clip_horizontal"/>
+    </LinearLayout>
+	<ImageView 
+        android:layout_width="35dip"
+        android:layout_height="49dip"
+        android:layout_marginLeft="35dip"
+        android:src="@drawable/pic_wenxintishi"
+        android:scaleType="fitCenter"
+        />
+</RelativeLayout>

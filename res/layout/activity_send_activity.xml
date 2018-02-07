@@ -1,0 +1,483 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2ef"
+    android:scrollbars="vertical"
+    tools:context=".SendActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:layout_marginTop="8dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/send_title_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/send_title_img"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginLeft="20dp"
+                    android:background="@null"
+                    android:focusableInTouchMode="true"
+                    android:hint="标题"
+                    android:textColorHint="#cccccc"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:maxLength="64" />
+
+                    <ImageView
+                        android:id="@+id/send_title_img"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="10dip"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/tanhao"
+                        android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="327dip"
+                android:layout_height="0.5dip"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dip"
+                android:layout_marginBottom="10dip"
+                android:background="#cdcdcd" />
+
+            <EditText
+                android:id="@+id/send_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="13dip"
+                android:background="@null"
+                android:hint="描述内容..."
+                android:textColorHint="#cccccc"
+                android:textSize="16sp" />
+
+            <com.nfs.youlin.utils.NoScrollGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:descendantFocusability="blocksDescendants"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:verticalSpacing="5dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/send_to_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="发送给"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/send_to_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/send_to_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tanhao"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhixiang" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+        <LinearLayout
+            android:id="@+id/start_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="开始时间"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/start_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:hint="开始时间"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/start_time_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tanhao"
+                    android:visibility="gone" />
+				<ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pic_shijina"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhixiang" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:id="@+id/end_time_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="结束时间"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/end_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:hint="结束时间"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+                <ImageView
+                    android:id="@+id/end_time_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tanhao"
+                    android:visibility="gone" />
+				<ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/pic_shijina"/>
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhixiang" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/send_address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/address_tv_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="活动地点"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/send_address_tv"
+                    android:layout_width="wrap_content"                         
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@+id/address_tv_1"
+                    android:layout_toLeftOf="@+id/send_address_img"
+                    android:hint="详细地址"
+                    android:textColor="#323232"
+                    android:maxLines="2"
+                    android:ellipsize="end"    
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"/>
+
+                <ImageView
+                    android:id="@+id/send_address_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:background="@drawable/tanhao"
+                    android:visibility="gone"
+                    android:layout_centerVertical="true" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhixiang"
+                    android:layout_centerVertical="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+<!--  
+        <LinearLayout
+            android:id="@+id/send_lable_layout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="标签"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/send_lable_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:hint="无"
+                    android:textColor="#323232"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/send_lable_img"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/tanhao"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/zhixiang" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:layout_marginTop="8dp"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="活动报名需要我确认"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <com.nfs.youlin.view.SwitchView
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="支持活动签到"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <com.nfs.youlin.view.SwitchView
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:background="#CCCCCC" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:text="支持活动抽奖"
+                android:textColor="#323232"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <com.nfs.youlin.view.SwitchView
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dip"
+            android:layout_marginBottom="8dp"
+            android:background="#CCCCCC" />
+        -->
+    </LinearLayout>
+
+</ScrollView>

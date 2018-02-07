@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/pop_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@drawable/bg_change_pwd" >
+        <Button
+            android:id="@+id/cancle_one"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:text="解除当前"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button" />
+		<View 
+		    android:layout_width="match_parent"
+		    android:layout_height="1dip"
+		    android:background="@drawable/fengexian"/>
+        <Button
+            android:id="@+id/cancel_all"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:text="解除全部"
+            android:textColor="#323232"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button" />
+		</LinearLayout>
+        <Button
+            android:id="@+id/black_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginBottom="13dip"
+            android:layout_marginTop="13dip"
+            android:text="取消"
+            android:textColor="#ff0000"
+            android:textSize="16sp"
+            android:background="@drawable/bg_button" />
+    </LinearLayout>
+
+</RelativeLayout>

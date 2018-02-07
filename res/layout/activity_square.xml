@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:background="#f3f2f0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.nfs.youlin.activity.titlebar.startactivity.zoom.ViewPagerFixed
+                android:id="@+id/square_viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="190dip"
+                android:layout_alignParentTop="true"
+                android:unselectedAlpha="1" />
+			
+            <LinearLayout
+                android:id="@+id/image_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+        <com.nfs.youlin.utils.NoScrollGridView
+            android:id="@+id/gridView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="1dip"
+            android:horizontalSpacing="1dip"
+            android:verticalSpacing="1dip"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+</ScrollView>

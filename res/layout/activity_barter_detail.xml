@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/buy_layout" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <RelativeLayout
+                android:id="@+id/viewPager_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <com.nfs.youlin.activity.titlebar.startactivity.zoom.ViewPagerFixed
+                    android:id="@+id/gallery01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dip"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/plugin_camera_black"
+                    android:unselectedAlpha="1" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dip"
+                    android:layout_marginTop="15dip"
+                    >
+
+                    <com.nfs.youlin.utils.RoundImageView
+                        android:id="@+id/barter_head_img"
+                        android:layout_width="40dip"
+                        android:layout_height="40dip"
+                        android:layout_marginBottom="1dip"
+                        android:layout_marginLeft="1dip"
+                        android:layout_marginTop="1dip" />
+
+                    <TextView
+                        android:id="@+id/barter_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginRight="20dip"
+                        android:layout_toRightOf="@+id/barter_head_img"
+                        android:textColor="#ffffff"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/barter_cout_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewPager_below_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/viewPager_layout" >
+
+                <View
+                    android:id="@+id/view_fengexian"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#eeeeee" />
+
+                <RelativeLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/view_fengexian"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="10dip"
+                    android:background="#ffffff" >
+					<TextView
+                        android:id="@+id/barter_new_old_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="3dip"
+                        android:background="@drawable/bg_barter_new_old"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="2dip"
+                        android:textColor="#646464"
+                        android:textSize="15sp" />
+					<TextView
+                        android:id="@+id/barter_browse_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:layout_toLeftOf="@+id/price_default_tv"
+                        android:textColor="#646464"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/price_default_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/price_tv"
+                        android:layout_centerVertical="true"
+                        android:text="￥"
+                        android:textColor="#FF7F00"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/price_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13dip"
+                        android:layout_centerVertical="true"
+                        android:textColor="#FF7F00"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/content_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout1"
+                    android:layout_marginLeft="13dip"
+                    android:layout_marginRight="13dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    android:background="#ffffff"
+                    android:textColor="#323232"
+                    android:textSize="16sp" />
+				<View
+				    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:layout_below="@+id/content_tv"
+                    android:background="#eeeeee" />
+                <RelativeLayout
+                    android:id="@+id/address_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:background="@drawable/bg_account" >
+
+                    <TextView
+                        android:id="@+id/address_default_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dip"
+                        android:textColor="#646464"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/address_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_toLeftOf="@+id/address_img"
+                        android:text="查看地图位置"
+                        android:textColor="#646464"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/address_img"
+                        android:layout_width="15dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/zhixiang" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dip"
+                    android:layout_below="@+id/address_layout"
+                    android:background="#f3f2f1" />
+                <RelativeLayout 
+                    android:id="@+id/report_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/view2"
+                    android:background="@drawable/bg_account" >
+                    <TextView 
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="举报商品"
+                        android:textColor="#323232"
+                        android:textSize="16sp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:layout_below="@+id/report_layout"
+                    android:background="#f3f2f1" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+	<View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_above="@+id/buy_layout"
+        android:background="#eeeeee" />
+    <LinearLayout
+        android:id="@+id/buy_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+		
+        <TextView
+            android:id="@+id/want_tv"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_account"
+            android:gravity="center"
+            android:textColor="#646464"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="match_parent"
+            android:background="#eeeeee" />
+
+        <TextView
+            android:id="@+id/comment_tv"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="1"
+            android:background="@drawable/bg_account"
+            android:gravity="center"
+            android:textColor="#646464"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/barter_chat_tv"
+            android:layout_width="0dp"
+            android:layout_height="50dip"
+            android:layout_weight="2"
+            android:background="@color/main"
+            android:gravity="center"
+            android:text="联系物主"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

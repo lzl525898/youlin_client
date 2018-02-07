@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f0" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/unexchangedgift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gftext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="12dip"
+                android:textColor="#fa5b11"
+                android:text="进行中"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/unexchangedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:scaleType="fitCenter"
+                android:background="#fa5b11" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exchangedgift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gftext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="12dip"
+                android:text="已兑换"
+                android:textColor="#909090"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/exchangedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:scaleType="fitCenter"
+                android:background="#fefefe" />
+        </LinearLayout>
+    </LinearLayout>
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginTop="60dip"
+	    android:layout_marginBottom="20dip"
+	    android:background="#ffffff">
+        <com.handmark.pulltorefresh.library.PullToRefreshListView 
+             android:id="@+id/giftlist"
+	        android:layout_width="match_parent"
+	    	android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+	</RelativeLayout>
+	<TextView 
+	    android:id="@+id/nomoregift"
+	    android:layout_width="match_parent"
+	    android:layout_height="20dip"
+	    android:gravity="center"
+	    android:layout_alignParentBottom="true"
+	    android:text="没有更多"
+	    android:textColor="#909090"
+	    android:visibility="invisible"
+	    android:textSize="14sp"/>
+</RelativeLayout>

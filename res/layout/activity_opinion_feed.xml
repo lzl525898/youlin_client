@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2f0" >
+          <RelativeLayout
+            android:id="@+id/category_layout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_account"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/category_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="类别"
+                android:textSize="16sp"
+                android:textColor="#323232"
+                android:layout_centerVertical="true" />
+
+                <ImageView
+                android:id="@+id/category_tanhao_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tanhao"
+                android:visibility="gone"
+                android:layout_toLeftOf="@+id/category_zhixiang_img"
+                android:layout_centerVertical="true" />
+
+            <ImageView
+                android:id="@+id/category_zhixiang_img"
+                android:layout_width="10dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/zhixiang"
+                android:layout_centerVertical="true" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.7dip"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/fengexian"
+                />
+        </RelativeLayout>  
+    <RelativeLayout
+        android:id="@+id/opinion_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="230dip"
+        android:layout_below="@id/category_layout1"
+        android:paddingTop="13dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="5dip"
+        android:background="#ffffff">
+    <EditText
+	    android:id="@+id/opinion_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dip"
+        android:textSize="16sp"
+        android:textColor="#323232"
+        android:hint="在这里输入意见哦,亲"
+        android:background="@null"
+        android:layout_toLeftOf="@+id/opinion_clear"/>
+	<ImageView 
+	    android:id="@+id/opinion_clear"
+	    android:layout_width="20dip"
+	    android:layout_height="20dip"
+	    android:src="@drawable/chahao"
+	    android:layout_alignParentRight="true"
+	    android:visibility="gone"/>
+	<ImageView
+        android:id="@+id/content_tanhao_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tanhao"
+        android:visibility="gone"
+        android:layout_alignParentRight="true" />
+	
+	</RelativeLayout>
+
+	<Button
+	    android:id="@+id/opinion_bt"
+	    android:layout_width="match_parent"
+	    android:layout_height="41dip"
+	    android:layout_below="@+id/opinion_layout"
+	    android:layout_marginTop="27dip"
+	    android:layout_marginLeft="30dip"
+	    android:layout_marginRight="30dip"
+	    android:background="@drawable/bg_default_button"
+	    android:text="提交" />
+
+</RelativeLayout>

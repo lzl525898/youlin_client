@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="308dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialogactivitystyle" >
+    <TextView 
+        android:id="@+id/nameaddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:textColor="#ffba02"
+        android:textSize="16sp"
+        android:text="xxxxxx"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_vertical"/>
+    <ImageView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fengexian"/>
+	 <ListView 
+	    android:id="@+id/address_list_bar"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"></ListView> 
+      <ListView 
+	    android:id="@+id/address_list_button"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"></ListView>  
+
+</LinearLayout>

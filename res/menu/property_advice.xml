@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item 
+	    android:id="@+id/addadvice"
+	    android:title=""
+	    android:showAsAction="always"
+	    android:actionLayout="@layout/property_advice_plus_layout" />
+
+</menu>

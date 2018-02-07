@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/popupmenu_add_listview"
+        android:layout_width="135dip"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="#eeeeee"
+        android:dividerHeight="0.7dip"
+        android:scrollbars="none"/>
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="308dp"
+    android:layout_height="62dip"
+    android:orientation="horizontal"
+    android:background="#ffffff" >
+
+    <ImageView 
+        android:id="@+id/address_check"
+        android:layout_width="13dp"
+        android:layout_height="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/btn_weixuanzhong_b"/>
+
+	 <ImageView 
+	    android:id="@+id/fenge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fengexian"
+        android:layout_alignParentBottom="true"/>
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="230dp"
+        android:layout_height="68dip"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp">
+
+   		<TextView 
+       		android:id="@+id/address_show"
+       		android:layout_width="wrap_content"
+       		android:layout_height="wrap_content"
+       		android:textSize="15sp"
+       		android:singleLine="true"
+       		android:ellipsize="end"
+       		android:textColor="#808080"
+       		android:text="xxxxxxxxxxxxxxx"
+       		android:layout_marginTop="10dp"
+       		android:layout_marginLeft="3dp"/>
+   		<LinearLayout 
+   		    android:id="@+id/address_status_success_layout"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		    android:layout_alignParentBottom="true"
+   		    android:layout_alignParentRight="true"
+   		    android:layout_marginRight="30dp"
+   		    android:layout_marginBottom="7dp"
+   		    android:orientation="horizontal">
+   			<ImageView
+   		   		android:id="@+id/address_status"
+   		  		android:layout_width="13dp"
+   		    	android:layout_height="13dp"
+   		    	android:src="@drawable/shenhetongguo"
+   		    	android:layout_margin="3dp"
+   		    	android:layout_gravity="center_vertical" />
+   			<TextView 
+   			   android:id="@+id/address_status_text"
+   			   android:layout_width="wrap_content"
+   			   android:layout_height="wrap_content"
+   			   android:textSize="13sp"
+   			   android:textColor="#87c03f"
+   			   android:text="审核通过"
+   			   android:layout_margin="3dp"
+   			   android:layout_gravity="center_vertical" />
+   		</LinearLayout>
+   		<LinearLayout 
+   		    android:id="@+id/address_status_waiting_layout"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		     android:layout_alignParentBottom="true"
+   		     android:layout_alignParentRight="true"
+   		    android:layout_marginRight="30dp"
+   		    android:layout_marginBottom="7dp"
+   		    android:orientation="horizontal"
+   		    android:visibility="gone">
+   			<ImageView
+   		   		android:id="@+id/address_status"
+   		  		android:layout_width="13dp"
+   		    	android:layout_height="13dp"
+   		    	android:src="@drawable/dengdaishenhe"
+   		    	android:layout_margin="3dp"
+   		    	android:layout_gravity="center_vertical" />
+   			<TextView 
+   			   android:id="@+id/address_status_text"
+   			   android:layout_width="wrap_content"
+   			   android:layout_height="wrap_content"
+   			   android:textSize="13sp"
+   			   android:textColor="#fb5b11"
+   			   android:text="等待审核"
+   			   android:layout_margin="3dp"
+   			   android:layout_gravity="center_vertical" />
+   		</LinearLayout>
+   		<LinearLayout 
+   		    android:id="@+id/address_status_failed_layout"
+   		    android:layout_width="wrap_content"
+   		    android:layout_height="wrap_content"
+   		     android:layout_alignParentBottom="true"
+   		     android:layout_alignParentRight="true"
+   		    android:layout_marginRight="30dp"
+   		    android:layout_marginBottom="7dp"
+   		    android:orientation="horizontal"
+   		    android:visibility="gone">
+   			<ImageView
+   		   		android:id="@+id/address_status"
+   		  		android:layout_width="13dp"
+   		    	android:layout_height="13dp"
+   		    	android:src="@drawable/dengdaishenhe"
+   		    	android:layout_margin="3dp"
+   		    	android:layout_gravity="center_vertical" />
+   			<TextView 
+   			   android:id="@+id/address_status_text"
+   			   android:layout_width="wrap_content"
+   			   android:layout_height="wrap_content"
+   			   android:textSize="13sp"
+   			   android:textColor="#fb5b11"
+   			   android:text="审核失败"
+   			   android:layout_margin="3dp"
+   			   android:layout_gravity="center_vertical" />
+   		</LinearLayout>
+	</RelativeLayout>
+
+</RelativeLayout>

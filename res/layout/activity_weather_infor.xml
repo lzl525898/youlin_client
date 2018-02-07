@@ -1,0 +1,1514 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InforActivity" >
+
+    <ScrollView
+        android:id="@+id/sv_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/news_bg"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="#00000000" >
+
+                <TextView
+                    android:id="@+id/position"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="-"
+                    android:textColor="#ffffff"
+                    android:textSize="19sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <TextView
+                        android:id="@+id/tv_wendu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/ll"
+                        android:layout_centerHorizontal="true"
+                        android:shadowColor="#0262a1"
+                        android:shadowDx="2"
+                        android:shadowDy="3"
+                        android:shadowRadius="2"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="80sp" />
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ll"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="5dp"
+                        android:text="更新时间：09:00"
+                        android:textColor="#eeeeee" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/tv_time"
+                        android:layout_centerHorizontal="true"
+                        android:text="" />
+
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv_weather"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="晴转多云"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#6cc8ec"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="今天"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="白天"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/img_bai_tb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/sun" />
+
+                    <TextView
+                        android:id="@+id/tv_bai_wendu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp" >
+
+                    <RelativeLayout
+                        android:layout_width="1px"
+                        android:layout_height="fill_parent"
+                        android:background="#6cc8ec" >
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_wan"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="晚上"
+                        android:textColor="#ffffff" />
+
+                    <ImageView
+                        android:id="@+id/img_wan_tb"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:src="@drawable/sun" />
+
+                    <TextView
+                        android:id="@+id/tv_wan_wendu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="-"
+                        android:textColor="#ffffff" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#6cc8ec"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv1_day"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="明天"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6cc8ec" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv1_weather"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="晴"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv1_feng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="南风"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv1_low"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="11°"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6cc8ec" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv1_high"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="22°"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#6cc8ec"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv2_day"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|right"
+                                android:text="后天"
+                                android:textColor="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="#6cc8ec" >
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv2_weather"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|left"
+                                android:text="晴"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv2_feng"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="南风"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv2_low"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|right"
+                                android:text="11°"
+                                android:textColor="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="#6cc8ec" >
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv2_high"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|left"
+                                android:text="22°"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#6cc8ec"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_yincang"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv3_day"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="明天"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6cc8ec" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv3_weather"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="晴"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv3_feng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="南风"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv3_low"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="11°"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6bc4e8" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv3_high"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="22°"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#6bc4e8"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv4_day"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|right"
+                                android:text="明天"
+                                android:textColor="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="#6bc4e8" >
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv4_weather"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|left"
+                                android:text="晴"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="0.7"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:id="@+id/tv4_feng"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="南风"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/tv4_low"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|right"
+                                android:text="11°"
+                                android:textColor="#ffffff" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:paddingBottom="15dp"
+                                android:paddingTop="15dp" >
+
+                                <RelativeLayout
+                                    android:layout_width="1px"
+                                    android:layout_height="fill_parent"
+                                    android:background="#6bc4e8" >
+                                </RelativeLayout>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv4_high"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_weight="1.2"
+                                android:gravity="center|left"
+                                android:text="22°"
+                                android:textColor="#ffffff" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#6bc4e8"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv5_day"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="明天"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6bc4e8" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv5_weather"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="晴"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.7"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@+id/tv5_feng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="南风"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/tv5_low"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|right"
+                            android:text="11°"
+                            android:textColor="#ffffff" />
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="2"
+                            android:gravity="center"
+                            android:paddingBottom="15dp"
+                            android:paddingTop="15dp" >
+
+                            <RelativeLayout
+                                android:layout_width="1px"
+                                android:layout_height="fill_parent"
+                                android:background="#6bc4e8" >
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/tv5_high"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.2"
+                            android:gravity="center|left"
+                            android:text="22°"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#6bc4e8"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_updown"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_updown"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="查看未来几天"
+                    android:textColor="#ffffff" />
+
+                <ImageView
+                    android:id="@+id/img_updown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:src="@drawable/jiantou2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#6bc4e8"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.92" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="bottom|right"
+                        android:text="湿度："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_shidu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.92" >
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="紫外线："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_ziwaixian"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="穿衣指数："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_chuanyi"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="空调指数："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_kongtiao"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2" >
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="洗车指数："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_xiche"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.92" >
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:gravity="top|right"
+                        android:text="运动指数："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/tv_yundong"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:gravity="top|left"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="#6bc4e8"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:gravity="bottom"
+                android:text="星座"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:orientation="vertical" >
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="130dip"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="10dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                           />
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView7"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView8"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView9"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView10"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            />
+
+                        <ImageView
+                            android:id="@+id/imageView11"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+
+                        <ImageView
+                            android:id="@+id/imageView12"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                             />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#6bc4e8"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.1"
+                        android:background="#00000000"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv15"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="今日运势"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#6bc4e8"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="综合指数："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_zonghe"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView17"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="健康指数："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_jiankang"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="财运指数："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_caiyun"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView22"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="爱情指数："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_love"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="速配星座："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_supei"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView20"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="幸运颜色："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_xingyunse"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            android:id="@+id/textView19"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:gravity="top|right"
+                            android:text="幸运数字："
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+
+                        <TextView
+                            android:id="@+id/tv_xingyunshuzi"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="top|left"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#6bc4e8"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.1"
+                        android:background="#00000000"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv18"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:gravity="center"
+                            android:text="本周运势"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_weight="1"
+                        android:background="#6bc4e8"
+                        android:orientation="horizontal" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll_bzjk"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bz_jk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4.9"
+                        android:gravity="right"
+                        android:text="健康："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/bz_jkinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bzwork"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll_bzjk"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bz_work"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4.9"
+                        android:gravity="right"
+                        android:text="工作："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/bz_workinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bzlove"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_bzwork"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bz_love"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4.9"
+                        android:gravity="right"
+                        android:text="爱情："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/bz_loveinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bzcy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll_bzlove"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/bz_cy"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="4.9"
+                        android:gravity="right"
+                        android:text="财运："
+                        android:textColor="#ffffff"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/bz_cyinfo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="-"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/ll_bzcy"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

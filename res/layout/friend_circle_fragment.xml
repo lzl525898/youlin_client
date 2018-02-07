@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/circlefragment"
+    android:background="#ffffff" >
+<!-- 	<ProgressBar
+	   android:id="@+id/init_pd"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:indeterminateDrawable="@drawable/push_animdraw"
+       android:indeterminateDuration="1500"
+       android:visibility="visible" /> -->
+	<!--<RelativeLayout 
+	    android:id="@+id/categorylay"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="#ffffff"
+    	android:visibility="visible">
+    	    <TextView 
+    	        android:layout_width="match_parent"
+    			android:layout_height="wrap_content"
+    			android:text="adasdasdasd"
+    			android:textSize="18sp"
+    			android:textColor="#323232"/>
+    	</RelativeLayout>  -->
+    <LinearLayout 
+        android:id="@+id/neighbor_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="73dip"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView 
+            android:layout_width="157dip"
+            android:layout_height="76dip"
+            android:background="@drawable/neighborinit" />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="您的小区还是空空的，请抓紧找组织！"
+            android:textColor="#646464"
+            android:textSize="12sp" />
+    </LinearLayout>
+	<uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+    	android:id="@+id/list_layout"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent">
+    	
+    	<FrameLayout
+    	    android:id="@+id/circle_layout" 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="match_parent">
+
+        
+        
+		<ListView 
+	    	android:id="@+id/friend_circle_lv"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="match_parent"
+	    	android:scrollbars="vertical"
+	    	android:divider="#00000000"
+	    	android:layout_weight="1" >
+		</ListView>
+		<LinearLayout 
+            android:id="@+id/ll_new_topic_notice"
+            android:layout_width="match_parent"
+            android:layout_height="49dip"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:background="#55000000"
+            android:visibility="gone">
+        	<View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#00000000" />
+            <TextView 
+                android:id="@+id/tv_new_topic_notice"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center|center_vertical"
+                android:textSize="18sp"
+                android:textColor="#ffc107"
+                android:text="有更多新消息"
+                android:visibility="gone"/>
+            <LinearLayout 
+                android:id="@+id/ll_wait_new_topic_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+               	<ProgressBar
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:indeterminateDrawable="@drawable/push_animdraw"
+                       android:indeterminateDuration="1500" />
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                     android:layout_gravity="center_vertical"
+                     android:text="正在加载数据..."
+                     android:textColor="#ffc107"
+                     android:textSize="17sp" />
+            </LinearLayout>
+        	<View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="#EEEEEE" />
+        </LinearLayout>
+		</FrameLayout>
+	</uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+	<TextView
+	    android:id="@+id/friend_circle_noinfo_tv"
+	    android:layout_width="fill_parent"
+	    android:layout_height="30dp"
+	    android:layout_alignParentBottom="true"
+	    android:textSize="15dp"
+	    android:gravity="center"
+	    android:text="没有更多了"
+	    android:textColor="#646464"
+	    android:visibility="gone">
+	</TextView>
+</RelativeLayout>

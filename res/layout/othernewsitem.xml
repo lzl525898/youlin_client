@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:id="@+id/newsotherlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        <TextView 
+            android:id="@+id/newsothertitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/newsotherimg"
+            android:textSize="16sp"
+            android:textColor="#909090"
+            android:text="为获取到"
+            android:gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:maxLines="2"
+            android:ellipsize="end"/>
+        <ImageView 
+            android:id="@+id/newsotherimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pic_youlin"
+            android:scaleType="fitXY"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

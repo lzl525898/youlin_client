@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="61dp" >
+    <TextView android:id="@+id/numset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:textColor="#808080"/>
+    <ImageButton android:id="@+id/setimage1"
+	   	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/search_clear_pressed"
+        android:visibility="gone"/>
+	<AutoCompleteTextView android:id="@+id/number"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/numset"
+        android:layout_toLeftOf="@id/setimage1"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edittext_none"
+        android:textSize="16sp"
+        android:textColor="#808080"
+        android:textColorHint="#cccccc"
+        android:completionHint="可选项"
+        android:dropDownHorizontalOffset="10dp"
+        android:completionThreshold="1"
+        android:layout_margin="5dp"/>
+	
+</RelativeLayout>

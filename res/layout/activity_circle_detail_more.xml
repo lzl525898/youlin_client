@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+   <ImageView 
+       android:id="@+id/circle_detail_menu_more"
+       android:layout_width="25dip"
+       android:layout_height="20dip"
+       android:layout_marginRight="8dip"
+       android:layout_gravity="center_vertical"
+       android:background="@drawable/circle_more"/>
+
+</LinearLayout>

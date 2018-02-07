@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+			<TextView 
+			    android:id="@+id/property_repair_add_title_tx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/property_repair_add_title_img"
+                android:background="@null"
+                android:hint="标题"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/property_repair_add_title_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/tanhao"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="327dip"
+            android:layout_height="0.7dip"
+            android:layout_below="@+id/title_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dip"
+            android:background="#CCCCCC" />
+
+        <RelativeLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view1" >
+
+            <EditText
+                android:id="@+id/property_repair_add_content_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/property_repair_add_content_img"
+                android:background="@null"
+                android:hint="描述内容..."
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/property_repair_add_content_img"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/tanhao"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+            
+               <com.nfs.youlin.utils.NoScrollGridView
+                android:id="@+id/noScrollgridview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="10dip"
+                android:descendantFocusability="blocksDescendants"
+                android:horizontalSpacing="3dp"
+                android:numColumns="4"
+                android:scrollbars="vertical"
+                android:verticalSpacing="5dp" 
+                android:layout_below="@id/property_repair_add_content_et"/>
+        </RelativeLayout>
+    </RelativeLayout>
+	</RelativeLayout>
+</ScrollView>

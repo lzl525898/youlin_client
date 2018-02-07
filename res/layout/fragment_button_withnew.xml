@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/bttext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dip"
+            android:layout_marginBottom="12dip"
+            android:textColor="#909090"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/bttext_flag"
+            android:layout_width="7dip"
+            android:layout_height="7dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/unread_count_bg" />
+    </LinearLayout>
+
+	<LinearLayout 
+	    android:id="@+id/fengecolorclick"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:visibility="gone">
+     <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dip"
+        android:background="@color/main"
+        android:visibility="visible" />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/fengexian" >
+    </ImageView>
+   
+	</LinearLayout>
+	<LinearLayout 
+	    android:id="@+id/fengecolornormal"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/white"
+        android:visibility="visible" />
+	 <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/fengexian" >
+    </ImageView>
+    
+	</LinearLayout>
+</LinearLayout>

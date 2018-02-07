@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#FFFFFF"
+    android:orientation="horizontal" >
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="6dp"
+        android:orientation="vertical" >
+
+       <!--  <LinearLayout
+            android:id="@+id/address_status_success_showlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/address_true_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="【审核通过】"
+                android:textColor="#87c03f"
+                android:textSize="16sp" />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:id="@+id/address_status_failed_showlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/address_false_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="【等待审核】"
+                android:textColor="#fb5b11"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/address_status_failed_showlayout" >
+
+            <ImageView
+                android:id="@+id/currentview"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_xuanzhong_a"
+                android:scaleType="fitCenter" />
+
+            <com.nfs.youlin.utils.AutoscrallTextview
+                android:id="@+id/address_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/currentview"
+                android:clickable="false"
+                android:text="xxxxxxxxxxxxxxxxxxx"
+                android:textColor="#323232"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <include layout="@layout/setaddr_title" />
+    <LinearLayout    
+        android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:background="#ffffff">
+    	<ImageView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/fenggexianchang"/>
+    	<ListView android:id="@+id/addrset1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"/>
+    	<ImageView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:src="@drawable/fengexian"/>
+    	<ListView android:id="@+id/addrset2"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    android:layout_marginTop="1dp"/>
+    	<ImageView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:src="@drawable/fengexian"/>
+    	<FrameLayout android:id="@+id/addrset3"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    android:layout_marginTop="1dp"></FrameLayout>
+    	<ImageView 
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginLeft="15dp"
+        	android:layout_marginRight="15dp"
+        	android:src="@drawable/fengexian"/>
+    	<FrameLayout android:id="@+id/addrset4"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_marginLeft="15dp"
+		    android:layout_marginRight="15dp"
+		    android:layout_weight="1"
+		    android:background="#ffffff"
+		    android:layout_marginTop="1dp"></FrameLayout>
+		<ImageView 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/fenggexianchang"/> 		
+	</LinearLayout>
+
+	<ImageView 
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:src="@drawable/fenggexianchang"/>
+	 <LinearLayout 
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginTop="50dip"
+	     android:layout_gravity="center_horizontal"
+	     android:orientation="horizontal">
+	     <ImageView 
+	         android:layout_width="12dip"
+	         android:layout_height="12dip"
+	         android:layout_gravity="center_vertical"
+	         android:background="@drawable/gray_heart"/>
+	     <TextView 
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:gravity="center_vertical"
+	         android:layout_marginLeft="5dip"
+	         android:text="温馨提示"
+	         android:textColor="#808080"
+	         android:textSize="12sp"/>
+	 </LinearLayout>
+	 <ImageView 
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginLeft="15dip"
+	     android:layout_marginRight="15dip"
+	     android:layout_marginTop="10dip"
+	     android:layout_marginBottom="20dip"
+	     android:background="@drawable/fengexian"/>
+	 <TextView 
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_marginLeft="15dip"
+	     android:layout_marginRight="15dip"
+	     android:lineSpacingExtra="10sp"
+	     android:text="请用户填写您真实的地址，否则在申请地址认证的过程中给您和其他用户带来不必要的麻烦。"
+	     android:textColor="#808080"
+	     android:textSize="12sp"/>
+<!-- 
+<ScrollView 
+    android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="vertical"
+            android:background="#ffffffff" 
+            android:scrollbars="none">>
+    <LinearLayout    
+         android:layout_width="match_parent"
+   	 	android:layout_height="wrap_content"
+    	android:orientation="vertical" 
+    	android:background="#888888">
+<TextView 
+    android:id="@+id/test22"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"/>
+</LinearLayout>
+</ScrollView> -->
+
+</LinearLayout>

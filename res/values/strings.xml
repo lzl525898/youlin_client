@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">优邻</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_personal_information">个人信息</string>
+    <string name="more_detail">more</string>
+    <string name="title_activity_send_activity">SendActivityActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_send_activity_picture">SendActivityPictureActivity</string>
+    <!-- 图片浏览 -->
+    <string name="only_choose_num">超出可选图片张数</string>
+    <string name="finish">完成</string>
+    <string name="invalidSD">sdcard无效或没有插入！</string>
+    <string name="photo">选择相册</string>
+    <string name="album">相册</string>
+    <string name="preview">预览</string>
+    <string name="unfinished">完成</string>
+    <string name="camera_cancel">清空</string>
+    <string name="no_photo">相册没有图片</string>
+    <string name="title_activity_send_activity_address">SendActivityAddress</string>
+    <string name="title_activity_property_repair">PropertyRepair</string>
+    <string name="title_activity_property_repair_add">PropertyRepairAdd</string>
+    <string name="menu_search">搜索</string>
+    <string name="menu_share">分享</string>
+    <string name="title_activity_gallery_picture">GalleryPictureActivity</string>
+    <string name="title_activity_opinion_feed_back">OpinionFeedBackActivity</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_property_gonggao_apply">PropertyGonggaoApply</string>
+    <string name="title_activity_property">PropertyActivity</string>
+    <string name="title_activity_property_advice">PropertyAdviceActivity</string>
+    <string name="title_activity_property_about">PropertyAboutActivity</string>
+    <string name="title_activity_init">InitActivity</string>
+    <string name="title_activity_initfragment1">Initfragment1</string>
+    <string name="title_activity_init_fragment2">InitFragment2</string>
+    <string name="title_activity_init_fragment3">InitFragment3</string>
+    <string name="title_activity_init_fragment4">InitFragment4</string>
+    <!-- 二维码扫描 -->
+    <string name="extension_qrcode_scan_help_tips">"将取景框对准二维码，
+即可自动扫描。"</string>
+    <string name="scan_retry">二维码扫描出错啦,请重新扫描</string>
+    <string name="press_again_exit">再按一次退出...</string>
+    <!-- ssss -->
+    <string name="screenshot_saved_title" msgid="6461865960961414961">"已捕获二维码。"</string>
+    <string name="title_activity_private_policy">PrivatePolicyActivity</string>
+    <string name="title_activity_portrait">PortraitActivity</string>
+    <string name="title_activity_neighbor_information">NeighborInformationActivity</string>
+    <string name="title_activity_neignbor_information">NeignborInformationActivity</string>
+    <string name="title_activity_friend_information">FriendInformationActivity</string>
+    <!-- hyy calendar -->
+    <string-array name="cal_weekdays">
+        <item>日</item>
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+    </string-array>
+
+    <string name="calendar_title">%1$d年%2$d月</string>
+    <string name="last_month">上个月</string>
+    <string name="next_month">下个月</string>
+    <string name="cal_signed">已签</string>
+    <string name="cal_today">今日</string>
+    <string name="cal_unsign">未签</string>
+    <string name="cal_unreach">签到</string>
+    <!-- calendar end -->
+    <string name="title_activity_invite_friend_integral">Invite_friend_integral</string>
+    <string name="title_activity_neighbor">NeighborActivity</string>
+    <string name="title_activity_store_circle_detail">StoreCircleDetailActivity</string>
+    <string name="title_activity_weather_list">WeatherListActivity</string>
+    <string name="title_activity_weather_infor">WeatherInforActivity</string>
+    <string name="title_activity_weather_list_activity">WeatherListActivityActivity</string>
+    
+    
+    
+    
+    
+    
+    <!-- Label for button to confirm chosen date or time [CHAR LIMIT=30] -->
+    <string name="mdtp_done_label">Done</string>
+    <string name="mdtp_ok">@android:string/ok</string>
+    <string name="mdtp_cancel">@android:string/cancel</string>
+    <!--
+         Content description for the hour selector in the time picker, which displays
+         selectable hours of the day along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_hour_picker_description">Hours circular slider</string>
+    <!--
+         Content description for the minute selector in the time picker, which displays
+         selectable five-minute intervals along the inside edge of a circle, as in an analog clock.
+         [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_minute_picker_description">Minutes circular slider</string>
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_hours">Select hours</string>
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_minutes">Select minutes</string>
+
+    <!--
+        Content description for the month and day selector in the date picker, which displays
+        a selectable grid of days laid out by month.
+        [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_day_picker_description">Month grid of days</string>
+    <!--
+        Content description for the year selector in the date picker, which displays
+        a scrolling, vertical list of years.
+        [CHAR LIMIT=50]
+    -->
+    <string name="mdtp_year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="mdtp_select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="mdtp_item_is_selected"><xliff:g id="item" example="2013">%1$s</xliff:g> selected</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="mdtp_deleted_key"><xliff:g id="key" example="4">%1$s</xliff:g> deleted</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_placeholder" translatable="false">--</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_time_separator" translatable="false">:</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_radial_numbers_typeface" translatable="false">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_sans_serif" translatable="false">sans-serif</string>
+
+    <!-- DO NOT TRANSLATE -->
+    <string name="mdtp_day_of_week_label_typeface" translatable="false">sans-serif</string>
+
+    <string name="login_with_msg">用手机号码登录</string>
+    <string name="login_with_weixin">用微信登录</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    
+    <string name="tpl_ok">确定</string>
+    <string name="tpl_cancel">取消</string>
+    
+    <string name="tpl_key_user_icon">头像</string>
+    <string name="tpl_key_user_name">昵称</string>
+    <string name="tpl_key_user_gender">性别</string>
+    <string name="tpl_key_user_note">备注</string>
+
+    <string name="tpl_value_user_name">昵称</string>
+    <string name="tpl_value_user_gender">性别</string>
+    <string name="tpl_value_user_note">请填写备注信息</string>
+    
+    <string name="tpl_sign_user_info">用户信息</string>
+    <string name="tpl_sign_up">注册</string>
+    <string name="tpl_girl">女</string>
+    <string name="tpl_boy">男</string>
+    
+    <string name="tpl_camera">拍照</string>
+    <string name="tpl_picture">从相册获取</string>
+    
+    <string name="tpl_change_user_name_title">更改名字</string>
+    <string name="tpl_change_user_note_title">更改备注</string>
+    <string name="tpl_input_user_name_hint">好名字可以让你的朋友更容易记住你</string>
+    <string name="tpl_input_user_note_hint">自定义备注信息，给你带来更多吸引</string>
+    
+    <string name="tpl_no_sdcard">sdcard 卡不存在</string>
+    <string name="tpl_msg_login_hint">请输入手机号码</string>
+    <string name="tpl_verify_code_hint">请输验证码</string>
+    <string name="tpl_get_verify_code">获取验证码</string>
+    <string name="tpl_send_verify_code">检验验证码</string>
+    <string name="signup_success">注册成功</string>
+    <string name="signup_failed">注册失败</string>
+    
+    
+</resources>

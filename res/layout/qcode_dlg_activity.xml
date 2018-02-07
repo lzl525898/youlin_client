@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:clickable="true"
+    android:id="@+id/tv_qcode_dlg">
+
+	<ProgressBar
+	    android:id="@+id/pb_q_code"
+	    style="@style/verifyloadingProgressStyle"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:visibility="gone" />
+	
+	<TextView
+	    android:id="@+id/tv_pb_q_code"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="5dip"
+	    android:text="正在审核中……"
+	    android:textColor="@color/title_color"
+	    android:textSize="12sp"
+	    android:visibility="gone" />
+
+</LinearLayout>

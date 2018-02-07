@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#987654" >
+    <TextView 
+        android:id="@+id/search_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="测试"
+        android:textSize="14dp"
+        android:textColor="#345678"/>
+	<ImageView  
+	    android:id="@+id/delete_searchhistory"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_vertical"
+	    android:background="@drawable/search_clear"
+	    android:clickable="true"/>
+</LinearLayout>

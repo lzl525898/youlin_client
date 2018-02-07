@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/coupon_refresh"
+        android:showAsAction="never"
+        android:title="刷新"/>
+    <item
+        android:id="@+id/coupon_copy"
+        android:showAsAction="never"
+        android:title="复制链接"/>
+    <item
+        android:id="@+id/coupon_open"
+        android:showAsAction="never"
+        android:title="在浏览器中打开"/>
+</menu>
+

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f2f0"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="94dip"
+	    android:background="#f3f2f0"
+	    android:gravity="center"
+	    android:orientation="horizontal">
+		<EditText 
+		    android:id="@+id/et_verfty_code"
+		    android:layout_width="194dip"
+		    android:layout_height="53dip"
+		    android:layout_marginLeft="10dip"
+		    android:layout_alignParentLeft="true"
+		    android:textSize="16sp"
+		    android:hint="输入您获取的验证码"
+		    android:inputType="numberDecimal"
+		    android:singleLine="true"
+		    android:gravity="center"
+		    android:digits="1234567890"
+		    android:background="@drawable/bg_vercode_edittext" />
+		<Button 
+		    android:id="@+id/btn_verfiy_code"
+		    android:layout_width="match_parent"
+		    android:layout_height="53dip"
+		    android:layout_toRightOf="@+id/et_verfty_code"
+		    android:layout_marginLeft="10dip"
+		    android:layout_marginRight="10dip"
+		    android:layout_alignParentRight="true"
+		    android:background="@drawable/bg_vercode_buttom"
+		    android:textSize="16sp"
+		    android:textColor="@android:color/white"
+		  	android:text="验证" />
+	</RelativeLayout>
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:singleLine="false"
+	    android:layout_marginLeft="19dip"
+	    android:layout_marginRight="19dip"
+	    android:textColor="#999999"
+	    android:textSize="12sp"
+	    android:text="此验证码是优邻线下活动中获取的验证码卡片，可以加速认证您的地址信息，保障您的及时使用。"/>
+
+</LinearLayout>

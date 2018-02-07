@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TitleIndicator">
+        <attr name="titlePaddingnew" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPaddingnew" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSizeNormal" format="dimension" />
+        <attr name="textSizeSelected" format="dimension" />
+        <attr name="footerLineHeightnew" format="dimension" />
+        <attr name="footerColornew" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

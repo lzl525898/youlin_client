@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffffff"
+    tools:context=".PropertyGonggaoApply" >
+
+    <TextView
+        android:id="@+id/apply_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请成为小区公告管理员后，可发布本小区的公告信息，建议物业或业主委员会成员申请。"
+        android:textSize="16sp"
+        android:textColor="#323232"/>
+    <Button 
+        android:id="@+id/admin_apply_bn"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_default_button"
+        android:layout_below="@+id/apply_tv"/>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout 
+	    android:id="@+id/share_pop_layout"
+	    android:layout_width="200dip"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/new_push"
+	    android:orientation="vertical">
+	    <ListView
+	        android:id="@+id/share_pop_repair_lv"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"      
+	        android:textSize="14sp"
+	        android:textColor="#ffffff"
+	        android:divider="#ffffff"
+	        android:dividerHeight="0.7dip"/>
+	    
+	</LinearLayout>
+</LinearLayout>

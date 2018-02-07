@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff" >
+    <include layout="@layout/address_title" />
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="4"
+        android:textSize="16sp"
+        android:textColor="#646464"
+        android:layout_marginLeft="13dip"
+        android:layout_marginRight="13dip"
+        android:layout_marginTop="13dip"
+        android:layout_marginBottom="13dip"
+        android:text="温馨提示：\n尊敬的用户，您还未填写地址，填写真实地址可以方便您与邻居沟通，方便查找周边的商业服务。\n我们将确保您的隐私信息不会显示和泄露。"
+        />
+	<Button 
+	    android:id="@+id/writeaddress"
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:text="填写地址"
+	    android:textColor="#ffffff"
+	    android:background="@drawable/bg_default_button"
+	    android:textSize="30sp"/>
+</LinearLayout>

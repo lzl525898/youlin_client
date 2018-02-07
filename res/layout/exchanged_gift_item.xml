@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dip"
+    android:background="@color/white" >
+    <ImageView 
+        android:id="@+id/giftview1"
+        android:layout_width="70dip"
+        android:layout_height="62dip"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pic_mianfen"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="15dip"/>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_toRightOf="@id/giftview1"
+	    android:layout_marginLeft="13dip"
+	    android:orientation="vertical"
+	    android:background="@color/white">
+	    <TextView 
+	        android:id="@+id/giftname1"
+	        android:layout_width="160dip"
+	        android:layout_height="wrap_content"
+	        android:lines="2"
+	        android:textSize="13sp"
+	        android:textColor="#323232"
+	        android:lineSpacingExtra="5dip"
+	        android:text="你你你你你你你你你你你你你你"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginTop="19dip"/>
+	    <TextView 
+	        android:id="@+id/arrivetime"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dip"
+	        android:textSize="12sp"
+	        android:background="#fa5c10"
+	        android:textColor="#ffffff"
+	        android:gravity="center"
+	        android:layout_marginBottom="20dip"
+	        android:text=" 本周五送达 "/>
+	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="16dip"
+	    android:gravity="right"
+	    android:orientation="vertical"
+	    android:background="@color/white">
+	     <TextView 
+	         android:id="@+id/sumcredit"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:lines="1"
+	        android:lineSpacingExtra="0dip"
+	        android:textSize="13sp"
+	        android:textColor="#323232"
+	        android:text="200 积分"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginTop="19dip"/>
+	     <TextView 
+	         android:id="@+id/giftcount"
+	        android:layout_width="wrap_content"
+	        android:layout_height="20dip"
+	        android:textSize="13sp"
+	        android:textColor="#808080"
+	        android:gravity="center"
+	        android:layout_marginTop="7dip"
+	        android:text=" x2 "/>
+	</LinearLayout>  
+</RelativeLayout>

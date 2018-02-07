@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="8dp"
+    android:background="#ffffff"
+    tools:context=".SendActivityAddress" >
+    
+	<EditText
+	    android:id="@+id/send_address_et" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="请填写详细地址，以便邻居参加活动。"
+	    android:textColorHint="#909090"
+	    android:textSize="16sp"
+	    android:layout_marginLeft="8dp"
+	    android:lines="2"
+	    android:background="@null"/>
+
+	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/send_address_et"
+        android:layout_marginTop="8dp">
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/bmapView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

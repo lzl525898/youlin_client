@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+   
+	<RelativeLayout
+	    android:id="@+id/network_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="33dip"
+	    android:layout_alignParentTop="true"
+	    android:visibility="gone"
+	    android:clickable="true" >
+	    <RelativeLayout
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_centerHorizontal="true">
+	        <ImageView
+	            android:id="@+id/network_img"
+	            android:layout_width="17dip"
+	            android:layout_height="17dip"
+	            android:layout_centerVertical="true"
+	            android:background="@drawable/pic_tanhao" />
+	        <TextView
+	            android:id="@+id/network_tv"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="11dip"
+	            android:layout_toRightOf="@+id/network_img"
+	            android:textColor="#ffffff" />
+	    </RelativeLayout>
+	</RelativeLayout>
+
+	<android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/network_layout"
+        android:layout_above="@+id/titlelayout" >
+    </android.support.v4.view.ViewPager>
+   <View 
+       android:layout_width="match_parent"
+       android:layout_height="1dip"
+       android:background="@drawable/fengexian"
+       android:layout_above="@+id/titlelayout"/>
+    <LinearLayout
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#efeff4"
+        android:layout_alignParentBottom="true" >
+        <RadioGroup
+            android:id="@+id/tab_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/title1"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                android:checked="true"
+                style="@style/tab_style"
+                android:gravity="center"
+                android:text="邻居圈"
+                android:textSize="14sp"
+                android:drawableTop="@drawable/tab_bg_selector"
+                android:layout_marginTop="2dp" />
+            <RadioButton
+                android:id="@+id/title2"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                style="@style/tab_style"
+                android:gravity="center"
+                android:text="广场"
+                android:textSize="14sp"
+                android:drawableTop="@drawable/tab_my_bg_selector"
+                android:layout_marginTop="2dp" />
+            <RadioButton
+                android:id="@+id/title3"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                style="@style/tab_style"
+                android:gravity="center"
+                android:text="发现"
+                android:textSize="14sp"
+                android:drawableTop="@drawable/tab_find_bg_selector"
+                android:layout_marginTop="2dp" />
+
+            <RadioButton
+                android:id="@+id/title4"
+                android:layout_height="wrap_content"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:paddingLeft="0dp"
+                style="@style/tab_style"
+                android:gravity="center"
+                android:text="我"
+                android:textSize="14sp"
+                android:drawableTop="@drawable/tab_my_bg_selector"
+                android:layout_marginTop="2dp" />
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

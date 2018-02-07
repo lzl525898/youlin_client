@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<LinearLayout 
+        android:id="@+id/repair_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dip"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ImageView 
+            android:layout_width="115dip"
+            android:layout_height="105dip"
+            android:background="@drawable/baoxiuinit" />
+        <TextView 
+            android:id="@+id/repair_init_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:text="您家里维护的棒棒的，没有报修！"
+            android:textColor="#646464"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/repair_init_below"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/uncompletedbaoxiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bxtext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="12dip"
+                android:textColor="@color/main"
+                android:text="未完成"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/uncompletedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:scaleType="fitCenter"
+                android:background="@color/main" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/completedbaoxiu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/bxtext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dip"
+                android:layout_marginTop="12dip"
+                android:text="已完成"
+                android:textColor="#909090"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/completedview"
+                android:layout_width="match_parent"
+                android:layout_height="3dip"
+                android:scaleType="fitCenter"
+                android:background="#a0a0a0" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/repair_init_below2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/tabcontentrepair"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffffff" >
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/repair_noinfo_tv1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="没有更多了"
+            android:textColor="#cccccc"
+            android:textSize="15dp"
+            android:visibility="gone" >
+        </TextView>
+    </RelativeLayout>
+
+</LinearLayout>
